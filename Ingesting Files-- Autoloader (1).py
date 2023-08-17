@@ -158,7 +158,8 @@ Stream should NOT STOP
 
 # COMMAND ----------
 
-
+for stream in spark.streams.active:
+    stream.stop()
 
 # COMMAND ----------
 
